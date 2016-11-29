@@ -10,7 +10,7 @@
 				<img class="img-responsive" itemprop="image" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
 				<div class="effect-hover"></div>
 			</a>
-			
+			<!-- Show Swap -->
 			<?php
 	  	 
 	  			$product_images = $this->model_catalog_product->getProductImages( $product['product_id'] );  

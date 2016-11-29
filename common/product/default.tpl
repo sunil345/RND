@@ -1,7 +1,7 @@
 <div class="product-block" itemtype="http://schema.org/Product" itemscope>	
 	<?php if ($product['thumb']) {    ?>
 		<div class="image <?php echo $product['stock_class']; ?>">
-		
+		<!--test--!>
 		<?php if (isset($thumb_soldout)) { ?><img style="z-index:1;position: absolute; pointer-events: none;" src="<?php echo $thumb_soldout; ?>" title="" alt="" class="sold-img-product"/><?php } ?>
 		
 			<?php if( $product['special'] ) {   ?>
@@ -15,6 +15,7 @@
 			<div class="wrap-hover clearfix">
 				<?php if( isset($categoryPzoom) && $categoryPzoom ) { $zimage = str_replace( "cache/","", preg_replace("#-\d+x\d+#", "",  $product['thumb'] ));  ?>
 					<div class="pull-left">
+						
 						<a href="<?php echo $zimage;?>" class="info-view colorbox product-zoom" title="<?php echo $product['name']; ?>"><span><?php echo $this->language->get("View Product"); ?></span></a>
 					</div>	
 				<?php } ?>	

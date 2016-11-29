@@ -23,16 +23,11 @@
 	$productLayout = DIR_TEMPLATE.$this->config->get('config_template').'/template/common/product/'.$listingConfig['product_layout'].'.tpl';	 
 ?>
 <div class="box-heading">
-	<span>
-		<?php echo $heading_title; ?>
-		</span>
-	<em class="line">
-	</em>
+	<span><?php echo $heading_title; ?></span>
+	<em class="line"></em>
 </div>  
 
 <div class="box-content">		
-	
-	<?php echo "sunil"; ?>
 	<?php foreach ($products as $i => $product) { $i=$i+1; ?>
 	<?php if( $i%$cols == 1 && $cols > 1 ) { ?>
 	<div class="row products-row">

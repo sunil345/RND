@@ -12,5 +12,4 @@ $class = $helper->calculateSpans( $ospans, $cols );
 		<?php  $j++;  } ?>	
 	</div></div>
 </section>
-
 <?php } ?>
